@@ -33,7 +33,7 @@ async function processJobs(jobs, batchSize = 3) {
 
 async function main() {
     const allJobs = await getJobs();
-    const twelveHoursAgo = new Date(Date.now() - 3 * 60 * 60 * 1000);
+    const twelveHoursAgo = new Date(Date.now() - 1 * 60 * 60 * 1000);
     
     const recentJobs = allJobs.filter(job => {
         const jobTime = new Date(job.timestamp);

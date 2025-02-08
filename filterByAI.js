@@ -7,7 +7,7 @@ export async function FilterByAI(job) {
     const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
 
     const prompt = `Analyze if this job is related to any kind of application development (web, mobile, desktop,Shopify, Wordpress etc), AI model development, Data analytics, UI/UX, Graphics design, Package Design.
-    If it is related to given topics, return "true". If not, return "false".
+    If it is  related to given topics, then return "true". If not, return "false".
     Job title: ${job.title}
     Required skills: ${job.skills.join(', ')}`;
 
